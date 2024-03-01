@@ -1,9 +1,8 @@
 function formatMessage(message, maxLength) {
-   const ext = "...";
    if (message.length <= maxLength) {
       return message;
    } else {
-      const truncatedMessage = message.slice(0, maxLength + 1) + ext;
+      const truncatedMessage = message.slice(0, maxLength) + "...";
       return truncatedMessage;
    }
 }
